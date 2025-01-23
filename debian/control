@@ -10,5 +10,5 @@ Homepage: http://lliurex.net
 
 Package: python3-imutils
 Architecture: all
-Depends: ${python3:Depends},python3-pyside2.qtgui
+Depends: ${python3:Depends},python3-pyside6.qtgui
 Description: Custom widgets for PySide
