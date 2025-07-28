@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name='imutils'
 version="0.5.4"
-description='A series of convenience functions to make basic image processing functions such as translation, rotation, resizing, skeletonization, displaying Matplotlib images, sorting contours, detecting edges, and much more easier with OpenCV and both Python 2.7 and Python 3.',
+description='A series of convenience functions to make basic image processing functions such as translation, rotation, resizing, skeletonization, displaying Matplotlib images, sorting contours, detecting edges, and much more easier with OpenCV and both Python 2.7 and Python 3.'
 authors=[
   {name='Adrian Rosebrock',email='adrian@pyimagesearch.com'}
   ]
@@ -15,9 +15,13 @@ license= {text='GPL-3'}
 classifiers=[
 	'computer vision', 'image processing', 'opencv', 'matplotlib',
   ]
-packages=['imutils', 'imutils.video', 'imutils.io', 'imutils.feature', 'imutils.face_utils'],
 dependencies=[
-  "requests",
-  "dbus",
+  "numpy",
   ]
+ 
+[project.scripts]
+range-detector='imutils.bin:main'
+ 
+[tool.setuptools]
+packages=['imutils', 'imutils.video', 'imutils.io', 'imutils.feature', 'imutils.face_utils']
 
